@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LeaderboardActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:titleTextColor="@color/black"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="#dfe1e5">
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Heading -->
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#27292B"
+        android:padding="10dp"
+        android:layout_below="@id/toolbar2">
+
+        <!-- Add TextViews to display column headings -->
+        <TextView
+            android:id="@+id/nameHeading"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/wonHeading"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Win"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/nameHeading"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/drawHeading"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Draw"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/wonHeading"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/totalHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/drawHeading"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#27292B"
+        android:padding="16dp"
+        android:layout_below="@id/heading"
+        />
+</RelativeLayout>

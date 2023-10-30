@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/leaderboard_row"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Username"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/matchesWonTextView"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/matchesDrawTextView"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/matchesPlayedTextView"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="0"
+        android:textSize="16sp" />
+
+
+
+
+
+</LinearLayout>
